@@ -30,14 +30,13 @@ namespace GESTION_ABSENCE
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm1));
-            DevComponents.DotNetBar.Keyboard.VirtualKeyboardColorTable virtualKeyboardColorTable1 = new DevComponents.DotNetBar.Keyboard.VirtualKeyboardColorTable();
-            DevComponents.DotNetBar.Keyboard.FlatStyleRenderer flatStyleRenderer1 = new DevComponents.DotNetBar.Keyboard.FlatStyleRenderer();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.bunifuCircleProgressbar1 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.keyboardControl1 = new DevComponents.DotNetBar.Keyboard.KeyboardControl();
+            this.bar1 = new DevComponents.DotNetBar.Bar();
+            ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -80,7 +79,7 @@ namespace GESTION_ABSENCE
             this.bunifuCircleProgressbar1.LabelVisible = true;
             this.bunifuCircleProgressbar1.LineProgressThickness = 8;
             this.bunifuCircleProgressbar1.LineThickness = 5;
-            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(105, 147);
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(183, 73);
             this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.bunifuCircleProgressbar1.MaxValue = 100;
             this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
@@ -125,34 +124,26 @@ namespace GESTION_ABSENCE
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // keyboardControl1
+            // bar1
             // 
-            virtualKeyboardColorTable1.BackgroundColor = System.Drawing.Color.Black;
-            virtualKeyboardColorTable1.DarkKeysColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(28)))), ((int)(((byte)(33)))));
-            virtualKeyboardColorTable1.DownKeysColor = System.Drawing.Color.White;
-            virtualKeyboardColorTable1.DownTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            virtualKeyboardColorTable1.KeysColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(47)))), ((int)(((byte)(55)))));
-            virtualKeyboardColorTable1.LightKeysColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            virtualKeyboardColorTable1.PressedKeysColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(161)))), ((int)(((byte)(81)))));
-            virtualKeyboardColorTable1.TextColor = System.Drawing.Color.White;
-            virtualKeyboardColorTable1.ToggleTextColor = System.Drawing.Color.Green;
-            virtualKeyboardColorTable1.TopBarTextColor = System.Drawing.Color.White;
-            this.keyboardControl1.ColorTable = virtualKeyboardColorTable1;
-            this.keyboardControl1.Location = new System.Drawing.Point(300, 41);
-            this.keyboardControl1.Name = "keyboardControl1";
-            flatStyleRenderer1.ColorTable = virtualKeyboardColorTable1;
-            flatStyleRenderer1.ForceAntiAlias = false;
-            this.keyboardControl1.Renderer = flatStyleRenderer1;
-            this.keyboardControl1.Size = new System.Drawing.Size(402, 157);
-            this.keyboardControl1.TabIndex = 5;
-            this.keyboardControl1.Text = "keyboardControl1";
+            this.bar1.AntiAlias = true;
+            this.bar1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bar1.IsMaximized = false;
+            this.bar1.Location = new System.Drawing.Point(49, 196);
+            this.bar1.Name = "bar1";
+            this.bar1.Size = new System.Drawing.Size(100, 25);
+            this.bar1.Stretch = true;
+            this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.bar1.TabIndex = 6;
+            this.bar1.TabStop = false;
+            this.bar1.Text = "bar1";
             // 
             // frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.keyboardControl1);
+            this.Controls.Add(this.bar1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuCircleProgressbar1);
             this.Controls.Add(this.maskedTextBox1);
@@ -160,6 +151,7 @@ namespace GESTION_ABSENCE
             this.Controls.Add(this.checkBox1);
             this.Name = "frm1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,7 +164,7 @@ namespace GESTION_ABSENCE
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private DevComponents.DotNetBar.Keyboard.KeyboardControl keyboardControl1;
+        private DevComponents.DotNetBar.Bar bar1;
     }
 }
 
