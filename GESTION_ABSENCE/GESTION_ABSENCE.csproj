@@ -68,6 +68,12 @@
     <Compile Include="frm1.Designer.cs">
       <DependentUpon>frm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_acceuil.Designer.cs">
+      <DependentUpon>frm_acceuil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm1.resx">
