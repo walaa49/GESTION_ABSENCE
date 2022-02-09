@@ -1,6 +1,7 @@
 ﻿create database ABSENCE
 use ABSENCE
 --------------
+--------------------
 create table Annee(
   NumA int primary key,
   NomA varchar(50)
@@ -37,4 +38,12 @@ create table Motif(
    DossierM varbinary(max),
    JustificationM varchar(70)
    )
+-----------------------------------------
+create table Absence(
+  NumAbs int primary key identity,
+  DateAbs date,
+  NumSe int foreign key references Seance(NumSe),
+  NumM int foreign key references Motif(NumM),
+  Cin varchar(20) foreign key references Inscription(Cin)
+  )
 
