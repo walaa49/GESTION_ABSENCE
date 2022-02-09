@@ -1,6 +1,13 @@
 ﻿create database ABSENCE
 use ABSENCE
 --------------
+create table Absence(
+  NumAbs int primary key identity,
+  DateAbs date,
+  NumSe int foreign key references Seance(NumSe),
+  NumM int foreign key references Motif(NumM),
+  Cin varchar(20) foreign key references Inscription(Cin)
+  ) 
 --------------------
 create table Annee(
   NumA int primary key,
