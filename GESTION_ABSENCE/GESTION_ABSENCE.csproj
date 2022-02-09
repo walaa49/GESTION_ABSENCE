@@ -68,10 +68,43 @@
     <Compile Include="frm1.Designer.cs">
       <DependentUpon>frm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_accueil.Designer.cs">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uc.accueil\uc_consulter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc.accueil\uc_consulter.Designer.cs">
+      <DependentUpon>uc_consulter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc.accueil\uc_saisie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc.accueil\uc_saisie.Designer.cs">
+      <DependentUpon>uc_saisie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc.accueil\uc_stagiaires.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc.accueil\uc_stagiaires.Designer.cs">
+      <DependentUpon>uc_stagiaires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc.accueil\uc_ulisateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc.accueil\uc_ulisateur.Designer.cs">
+      <DependentUpon>uc_ulisateur.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm1.resx">
       <DependentUpon>frm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_accueil.resx">
+      <DependentUpon>frm_accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,7 +114,20 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="uc.accueil\uc_consulter.resx">
+      <DependentUpon>uc_consulter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc.accueil\uc_saisie.resx">
+      <DependentUpon>uc_saisie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc.accueil\uc_stagiaires.resx">
+      <DependentUpon>uc_stagiaires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc.accueil\uc_ulisateur.resx">
+      <DependentUpon>uc_ulisateur.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABSENCE.sql" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.jpg" />
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '16.0'">
     <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
