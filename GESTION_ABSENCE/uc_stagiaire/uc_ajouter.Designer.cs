@@ -39,12 +39,15 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.btxttelephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btxtprenom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cmbgroupe = new System.Windows.Forms.ComboBox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bbtnajouter = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cmbannee = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bbtnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bbtnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bbtnmodifier = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +74,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.btxtcin.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.btxtcin.LineThickness = 3;
             this.btxtcin.Location = new System.Drawing.Point(20, 48);
-            this.btxtcin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btxtcin.Margin = new System.Windows.Forms.Padding(5);
             this.btxtcin.Name = "btxtcin";
             this.btxtcin.Size = new System.Drawing.Size(200, 39);
             this.btxtcin.TabIndex = 7;
@@ -149,30 +152,30 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.cmbgroupe.TabIndex = 11;
             this.cmbgroupe.Text = "     --GROUPE--";
             // 
-            // bunifuThinButton21
+            // bbtnajouter
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Silver;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "ThinButton";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(34, 347);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(85, 33);
-            this.bunifuThinButton21.TabIndex = 12;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bbtnajouter.ActiveBorderThickness = 1;
+            this.bbtnajouter.ActiveCornerRadius = 20;
+            this.bbtnajouter.ActiveFillColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.ActiveForecolor = System.Drawing.Color.White;
+            this.bbtnajouter.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.BackColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnajouter.BackgroundImage")));
+            this.bbtnajouter.ButtonText = "AJOUTER";
+            this.bbtnajouter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bbtnajouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnajouter.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bbtnajouter.IdleBorderThickness = 1;
+            this.bbtnajouter.IdleCornerRadius = 20;
+            this.bbtnajouter.IdleFillColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.bbtnajouter.IdleLineColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.Location = new System.Drawing.Point(8, 361);
+            this.bbtnajouter.Margin = new System.Windows.Forms.Padding(5);
+            this.bbtnajouter.Name = "bbtnajouter";
+            this.bbtnajouter.Size = new System.Drawing.Size(127, 37);
+            this.bbtnajouter.TabIndex = 12;
+            this.bbtnajouter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbannee
             // 
@@ -202,7 +205,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView1.ColumnHeadersHeight = 32;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -217,7 +220,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(297, 93);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(292, 64);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowHeadersWidth = 62;
@@ -237,7 +240,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 32;
             this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -247,6 +250,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 28;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -266,14 +270,92 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             // 
+            // bbtnrechercher
+            // 
+            this.bbtnrechercher.ActiveBorderThickness = 1;
+            this.bbtnrechercher.ActiveCornerRadius = 20;
+            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.White;
+            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
+            this.bbtnrechercher.ButtonText = "RECHERCHER";
+            this.bbtnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bbtnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnrechercher.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bbtnrechercher.IdleBorderThickness = 1;
+            this.bbtnrechercher.IdleCornerRadius = 20;
+            this.bbtnrechercher.IdleFillColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.bbtnrechercher.IdleLineColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.Location = new System.Drawing.Point(434, 361);
+            this.bbtnrechercher.Margin = new System.Windows.Forms.Padding(5);
+            this.bbtnrechercher.Name = "bbtnrechercher";
+            this.bbtnrechercher.Size = new System.Drawing.Size(180, 37);
+            this.bbtnrechercher.TabIndex = 15;
+            this.bbtnrechercher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bbtnsupprimer
+            // 
+            this.bbtnsupprimer.ActiveBorderThickness = 1;
+            this.bbtnsupprimer.ActiveCornerRadius = 20;
+            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.White;
+            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnsupprimer.BackgroundImage")));
+            this.bbtnsupprimer.ButtonText = "SUPPRIMER";
+            this.bbtnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bbtnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnsupprimer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bbtnsupprimer.IdleBorderThickness = 1;
+            this.bbtnsupprimer.IdleCornerRadius = 20;
+            this.bbtnsupprimer.IdleFillColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.bbtnsupprimer.IdleLineColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.Location = new System.Drawing.Point(278, 361);
+            this.bbtnsupprimer.Margin = new System.Windows.Forms.Padding(5);
+            this.bbtnsupprimer.Name = "bbtnsupprimer";
+            this.bbtnsupprimer.Size = new System.Drawing.Size(148, 37);
+            this.bbtnsupprimer.TabIndex = 16;
+            this.bbtnsupprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bbtnmodifier
+            // 
+            this.bbtnmodifier.ActiveBorderThickness = 1;
+            this.bbtnmodifier.ActiveCornerRadius = 20;
+            this.bbtnmodifier.ActiveFillColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.ActiveForecolor = System.Drawing.Color.White;
+            this.bbtnmodifier.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.BackColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnmodifier.BackgroundImage")));
+            this.bbtnmodifier.ButtonText = "MODIFIER";
+            this.bbtnmodifier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bbtnmodifier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnmodifier.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bbtnmodifier.IdleBorderThickness = 1;
+            this.bbtnmodifier.IdleCornerRadius = 20;
+            this.bbtnmodifier.IdleFillColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.bbtnmodifier.IdleLineColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.Location = new System.Drawing.Point(143, 361);
+            this.bbtnmodifier.Margin = new System.Windows.Forms.Padding(5);
+            this.bbtnmodifier.Name = "bbtnmodifier";
+            this.bbtnmodifier.Size = new System.Drawing.Size(127, 37);
+            this.bbtnmodifier.TabIndex = 17;
+            this.bbtnmodifier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // uc_ajouter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.bbtnmodifier);
+            this.Controls.Add(this.bbtnsupprimer);
+            this.Controls.Add(this.bbtnrechercher);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.cmbannee);
-            this.Controls.Add(this.bunifuThinButton21);
+            this.Controls.Add(this.bbtnajouter);
             this.Controls.Add(this.cmbgroupe);
             this.Controls.Add(this.btxttelephone);
             this.Controls.Add(this.btxtprenom);
@@ -296,11 +378,14 @@ namespace GESTION_ABSENCE.uc_stagiaire
         private Bunifu.Framework.UI.BunifuMaterialTextbox btxttelephone;
         private Bunifu.Framework.UI.BunifuMaterialTextbox btxtprenom;
         private System.Windows.Forms.ComboBox cmbgroupe;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 bbtnajouter;
         private System.Windows.Forms.ComboBox cmbannee;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Bunifu.Framework.UI.BunifuThinButton2 bbtnrechercher;
+        private Bunifu.Framework.UI.BunifuThinButton2 bbtnsupprimer;
+        private Bunifu.Framework.UI.BunifuThinButton2 bbtnmodifier;
     }
 }

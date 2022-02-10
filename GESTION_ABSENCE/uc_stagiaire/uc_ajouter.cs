@@ -21,5 +21,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
         {
 
         }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
