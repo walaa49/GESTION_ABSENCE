@@ -16,7 +16,7 @@ namespace GESTION_ABSENCE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGestionStagiaires());
+            Application.Run(new frm_accueil());
         }
     }
 }
