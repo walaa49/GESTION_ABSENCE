@@ -32,17 +32,21 @@ namespace GESTION_ABSENCE
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionStagiaires));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.uc_supprimer1 = new GESTION_ABSENCE.uc_stagiaire.uc_supprimer();
+            this.uc_ajouter1 = new GESTION_ABSENCE.uc_stagiaire.uc_ajouter();
+            this.uc_modifier1 = new GESTION_ABSENCE.uc_stagiaire.uc_modifier();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +72,18 @@ namespace GESTION_ABSENCE
             this.label1.TabIndex = 2;
             this.label1.Text = "Gestion Stagiaires";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Crimson;
@@ -92,14 +108,6 @@ namespace GESTION_ABSENCE
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(181, 623);
             this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(181, 85);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(927, 623);
-            this.panel3.TabIndex = 3;
             // 
             // button5
             // 
@@ -167,17 +175,43 @@ namespace GESTION_ABSENCE
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // panel3
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.panel3.Controls.Add(this.uc_modifier1);
+            this.panel3.Controls.Add(this.uc_ajouter1);
+            this.panel3.Controls.Add(this.uc_supprimer1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(181, 85);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(927, 623);
+            this.panel3.TabIndex = 3;
+            // 
+            // uc_supprimer1
+            // 
+            this.uc_supprimer1.BackColor = System.Drawing.Color.Silver;
+            this.uc_supprimer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_supprimer1.Location = new System.Drawing.Point(0, 0);
+            this.uc_supprimer1.Name = "uc_supprimer1";
+            this.uc_supprimer1.Size = new System.Drawing.Size(927, 623);
+            this.uc_supprimer1.TabIndex = 0;
+            // 
+            // uc_ajouter1
+            // 
+            this.uc_ajouter1.BackColor = System.Drawing.Color.Silver;
+            this.uc_ajouter1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_ajouter1.Location = new System.Drawing.Point(0, 0);
+            this.uc_ajouter1.Name = "uc_ajouter1";
+            this.uc_ajouter1.Size = new System.Drawing.Size(927, 623);
+            this.uc_ajouter1.TabIndex = 1;
+            // 
+            // uc_modifier1
+            // 
+            this.uc_modifier1.BackColor = System.Drawing.Color.Silver;
+            this.uc_modifier1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_modifier1.Location = new System.Drawing.Point(0, 0);
+            this.uc_modifier1.Name = "uc_modifier1";
+            this.uc_modifier1.Size = new System.Drawing.Size(927, 623);
+            this.uc_modifier1.TabIndex = 2;
             // 
             // frmGestionStagiaires
             // 
@@ -194,8 +228,9 @@ namespace GESTION_ABSENCE
             this.Text = "frmGestionStagiaires";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,5 +247,8 @@ namespace GESTION_ABSENCE
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel3;
+        private uc_stagiaire.uc_modifier uc_modifier1;
+        private uc_stagiaire.uc_ajouter uc_ajouter1;
+        private uc_stagiaire.uc_supprimer uc_supprimer1;
     }
 }
