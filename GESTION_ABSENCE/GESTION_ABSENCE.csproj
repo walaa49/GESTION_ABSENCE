@@ -68,6 +68,12 @@
     <Compile Include="frm1.Designer.cs">
       <DependentUpon>frm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGestionStagiaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionStagiaires.Designer.cs">
+      <DependentUpon>frmGestionStagiaires.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,8 +112,17 @@
     <Compile Include="uc.accueil\uc_ulisateur.Designer.cs">
       <DependentUpon>uc_ulisateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_stagiaire\uc_ajouter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_stagiaire\uc_ajouter.Designer.cs">
+      <DependentUpon>uc_ajouter.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm1.resx">
       <DependentUpon>frm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGestionStagiaires.resx">
+      <DependentUpon>frmGestionStagiaires.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_accueil.resx">
       <DependentUpon>frm_accueil.cs</DependentUpon>
@@ -152,6 +167,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABSENCE.sql" />
+    <None Include="Resources\stg_rechercher.png" />
+    <None Include="Resources\stg_supprimer.png" />
+    <None Include="Resources\stg_modifier.png" />
+    <None Include="Resources\stg_ajouter.png" />
     <None Include="Resources\2.jpg" />
     <None Include="Resources\1.jpg" />
     <None Include="Resources\4.png" />
@@ -171,6 +190,7 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>
