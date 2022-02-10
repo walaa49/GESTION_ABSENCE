@@ -35,7 +35,7 @@ namespace GESTION_ABSENCE.uc.accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::GESTION_ABSENCE.Properties.Resources._2;
+            this.BackgroundImage = global::GESTION_ABSENCE.Properties.Resources.uc_utili;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "uc_ulisateur";
             this.Size = new System.Drawing.Size(944, 371);

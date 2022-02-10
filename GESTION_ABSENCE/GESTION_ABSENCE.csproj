@@ -88,6 +88,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="uc.accueil\uc_consulter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,13 +138,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="uc.accueil\uc_consulter.resx">
       <DependentUpon>uc_consulter.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,14 +166,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABSENCE.sql" />
-    <None Include="Resources\stg_rechercher.png" />
+    <None Include="Resources\uc_saisi.jpg" />
+    <None Include="Resources\uc_consul.jpg" />
     <None Include="Resources\stg_supprimer.png" />
+    <None Include="Resources\stg_rechercher.png" />
     <None Include="Resources\stg_modifier.png" />
     <None Include="Resources\stg_ajouter.png" />
-    <None Include="Resources\2.jpg" />
-    <None Include="Resources\1.jpg" />
-    <None Include="Resources\4.png" />
-    <None Include="Resources\3.jpg" />
+    <None Include="Resources\uc_utili.png" />
+    <None Include="Resources\uc_stg.jpg" />
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '16.0'">
     <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">

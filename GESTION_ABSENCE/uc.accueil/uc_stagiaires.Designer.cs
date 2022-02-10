@@ -71,7 +71,7 @@ namespace GESTION_ABSENCE.uc.accueil
             // uc_stagiaires
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::GESTION_ABSENCE.Properties.Resources._1;
+            this.BackgroundImage = global::GESTION_ABSENCE.Properties.Resources.uc_stg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label1);
