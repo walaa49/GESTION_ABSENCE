@@ -25,14 +25,19 @@ create table Groupe(
  Filiere varchar(50)
  )
 --------------------------------
-create table Inscription(
+create table Stagiaire(
    Cin varchar(20) primary key ,
+   NomS varchar(20) ,
+   PrenomS varchar(20) ,
+   TelephoneS int ,
    NumA int foreign key references Annee(NumA),
    NumAs int foreign key references AnneeScolaire(NumAs),
    NomG int foreign key references Groupe(NomG),
    NbrSeanceA float ,
    NoteAssiduite float
    )
+
+
 --------------------------------------
 create table Motif(
    NumM int primary key identity,
@@ -40,11 +45,12 @@ create table Motif(
    JustificationM varchar(70)
    )
 -----------------------------------------
-create table Absence(
+create  table Absence
+(
   NumAbs int primary key identity,
   DateAbs date,
   NumSe int foreign key references Seance(NumSe),
   NumM int foreign key references Motif(NumM),
-  Cin varchar(20) foreign key references Inscription(Cin)
+  Cin varchar(20) foreign key references Stagiaire(Cin)
   )
 

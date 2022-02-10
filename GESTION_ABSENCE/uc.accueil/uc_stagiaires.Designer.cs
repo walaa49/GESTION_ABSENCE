@@ -77,7 +77,7 @@ namespace GESTION_ABSENCE.uc.accueil
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "uc_stagiaires";
-            this.Size = new System.Drawing.Size(1100, 426);
+            this.Size = new System.Drawing.Size(944, 371);
             this.ResumeLayout(false);
             this.PerformLayout();
 

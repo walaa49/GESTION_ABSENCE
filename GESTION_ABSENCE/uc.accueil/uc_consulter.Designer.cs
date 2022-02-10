@@ -38,7 +38,7 @@ namespace GESTION_ABSENCE.uc.accueil
             this.BackgroundImage = global::GESTION_ABSENCE.Properties.Resources._4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "uc_consulter";
-            this.Size = new System.Drawing.Size(1100, 426);
+            this.Size = new System.Drawing.Size(944, 371);
             this.ResumeLayout(false);
 
         }
