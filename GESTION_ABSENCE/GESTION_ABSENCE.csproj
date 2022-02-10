@@ -47,6 +47,10 @@
     </Reference>
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -150,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc.accueil\uc_ulisateur.resx">
       <DependentUpon>uc_ulisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_stagiaire\uc_ajouter.resx">
+      <DependentUpon>uc_ajouter.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -16,5 +16,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
         {
             InitializeComponent();
         }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
