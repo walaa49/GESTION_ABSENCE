@@ -133,6 +133,18 @@
     <Compile Include="uc_stagiaire\uc_modifier.Designer.cs">
       <DependentUpon>uc_modifier.cs</DependentUpon>
     </Compile>
+    <Compile Include="uc_stagiaire\uc_rechercher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_stagiaire\uc_rechercher.Designer.cs">
+      <DependentUpon>uc_rechercher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_stagiaire\uc_supprimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_stagiaire\uc_supprimer.Designer.cs">
+      <DependentUpon>uc_supprimer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm1.resx">
       <DependentUpon>frm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="uc_stagiaire\uc_modifier.resx">
       <DependentUpon>uc_modifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_stagiaire\uc_rechercher.resx">
+      <DependentUpon>uc_rechercher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_stagiaire\uc_supprimer.resx">
+      <DependentUpon>uc_supprimer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
