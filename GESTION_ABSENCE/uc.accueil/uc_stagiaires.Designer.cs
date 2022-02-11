@@ -39,7 +39,7 @@ namespace GESTION_ABSENCE.uc.accueil
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(295, 196);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 22);
+            this.label1.Size = new System.Drawing.Size(226, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "GERER LES STAGIRES";
             // 
@@ -67,6 +67,7 @@ namespace GESTION_ABSENCE.uc.accueil
             this.bunifuThinButton21.Size = new System.Drawing.Size(146, 108);
             this.bunifuThinButton21.TabIndex = 1;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // uc_stagiaires
             // 

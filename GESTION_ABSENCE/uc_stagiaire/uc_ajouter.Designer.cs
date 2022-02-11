@@ -248,9 +248,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnvider.ActiveBorderThickness = 1;
             this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnvider.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnvider.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnvider.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bbtnvider.BackColor = System.Drawing.Color.Silver;
             this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
             this.bbtnvider.ButtonText = "VIDER";
@@ -273,9 +273,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnsupprimer.ActiveBorderThickness = 1;
             this.bbtnsupprimer.ActiveCornerRadius = 20;
-            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
             this.bbtnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnsupprimer.BackgroundImage")));
             this.bbtnsupprimer.ButtonText = "SUPPRIMER";
@@ -298,9 +298,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnajouter.ActiveBorderThickness = 1;
             this.bbtnajouter.ActiveCornerRadius = 20;
-            this.bbtnajouter.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnajouter.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnajouter.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnajouter.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnajouter.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnajouter.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.bbtnajouter.BackColor = System.Drawing.Color.Silver;
             this.bbtnajouter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnajouter.BackgroundImage")));
             this.bbtnajouter.ButtonText = "AJOUTER";

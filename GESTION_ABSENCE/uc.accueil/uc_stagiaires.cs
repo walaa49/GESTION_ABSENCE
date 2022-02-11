@@ -16,5 +16,12 @@ namespace GESTION_ABSENCE.uc.accueil
         {
             InitializeComponent();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmGestionStagiaires fg = new frmGestionStagiaires();
+            fg.Show();
+        }
     }
 }
