@@ -32,7 +32,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_supprimer));
             this.lbltitre = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -191,7 +190,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
             this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnvider.BackColor = System.Drawing.Color.Silver;
-            this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
             this.bbtnvider.ButtonText = "VIDER";
             this.bbtnvider.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bbtnvider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -216,7 +214,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
             this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnsupprimer.BackgroundImage")));
             this.bbtnsupprimer.ButtonText = "SUPPRIMER";
             this.bbtnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bbtnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -241,7 +238,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
             this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
             this.bbtnrechercher.ButtonText = "RECHERCHER";
             this.bbtnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bbtnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
