@@ -22,10 +22,11 @@ namespace GESTION_ABSENCE
             bunifuTransition2.HideSync(uc_modifier1);
             bunifuTransition2.HideSync(uc_rechercher1);
             bunifuTransition2.HideSync(uc_supprimer1);
+            bunifuTransition1.ShowSync(uc_ajouter1);
             pictureBox2.Hide();
             lbldate.Hide();
             lbltime.Hide();
-            bunifuTransition1.ShowSync(uc_ajouter1);
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

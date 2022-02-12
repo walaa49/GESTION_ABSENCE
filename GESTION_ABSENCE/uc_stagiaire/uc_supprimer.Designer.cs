@@ -39,8 +39,8 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpbrecherche = new System.Windows.Forms.GroupBox();
-            this.btxtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cmbgroupe = new System.Windows.Forms.ComboBox();
+            this.btxtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bbtnvider = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bbtnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bbtnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -152,6 +152,17 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.grpbrecherche.TabStop = false;
             this.grpbrecherche.Text = "RECHERCHE";
             // 
+            // cmbgroupe
+            // 
+            this.cmbgroupe.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbgroupe.ForeColor = System.Drawing.Color.Gray;
+            this.cmbgroupe.FormattingEnabled = true;
+            this.cmbgroupe.Location = new System.Drawing.Point(538, 36);
+            this.cmbgroupe.Name = "cmbgroupe";
+            this.cmbgroupe.Size = new System.Drawing.Size(200, 31);
+            this.cmbgroupe.TabIndex = 12;
+            this.cmbgroupe.Text = "     --GROUPE--";
+            // 
             // btxtcin
             // 
             this.btxtcin.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -172,24 +183,13 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.btxtcin.Text = "CIN";
             this.btxtcin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // cmbgroupe
-            // 
-            this.cmbgroupe.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbgroupe.ForeColor = System.Drawing.Color.Gray;
-            this.cmbgroupe.FormattingEnabled = true;
-            this.cmbgroupe.Location = new System.Drawing.Point(538, 36);
-            this.cmbgroupe.Name = "cmbgroupe";
-            this.cmbgroupe.Size = new System.Drawing.Size(200, 31);
-            this.cmbgroupe.TabIndex = 12;
-            this.cmbgroupe.Text = "     --GROUPE--";
-            // 
             // bbtnvider
             // 
             this.bbtnvider.ActiveBorderThickness = 1;
             this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnvider.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnvider.BackColor = System.Drawing.Color.Silver;
             this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
             this.bbtnvider.ButtonText = "VIDER";
@@ -212,9 +212,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnsupprimer.ActiveBorderThickness = 1;
             this.bbtnsupprimer.ActiveCornerRadius = 20;
-            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
             this.bbtnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnsupprimer.BackgroundImage")));
             this.bbtnsupprimer.ButtonText = "SUPPRIMER";
@@ -237,9 +237,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnrechercher.ActiveBorderThickness = 1;
             this.bbtnrechercher.ActiveCornerRadius = 20;
-            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
             this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
             this.bbtnrechercher.ButtonText = "RECHERCHER";

@@ -78,5 +78,10 @@ namespace GESTION_ABSENCE
             f.Show();
 
         }
+
+        private void uc_stagiaires1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

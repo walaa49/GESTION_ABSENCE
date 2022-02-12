@@ -166,9 +166,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnmodifier.ActiveBorderThickness = 1;
             this.bbtnmodifier.ActiveCornerRadius = 20;
-            this.bbtnmodifier.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnmodifier.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnmodifier.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnmodifier.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnmodifier.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnmodifier.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnmodifier.BackColor = System.Drawing.Color.Silver;
             this.bbtnmodifier.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnmodifier.BackgroundImage")));
             this.bbtnmodifier.ButtonText = "MODIFIER";
@@ -191,9 +191,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnrechercher.ActiveBorderThickness = 1;
             this.bbtnrechercher.ActiveCornerRadius = 20;
-            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
             this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
             this.bbtnrechercher.ButtonText = "RECHERCHER";
@@ -297,9 +297,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             this.bbtnvider.ActiveBorderThickness = 1;
             this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.White;
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Silver;
+            this.bbtnvider.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnvider.BackColor = System.Drawing.Color.Silver;
             this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
             this.bbtnvider.ButtonText = "VIDER";

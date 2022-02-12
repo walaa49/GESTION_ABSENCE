@@ -29,9 +29,9 @@ namespace GESTION_ABSENCE.uc_stagiaire
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_rechercher));
             this.lbltitre = new System.Windows.Forms.Label();
             this.grpbrecherche = new System.Windows.Forms.GroupBox();
@@ -41,8 +41,8 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bbtnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bbtnvider = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bbtnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
             this.grpbrecherche.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -103,34 +103,34 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gunaDataGridView1.ColumnHeadersHeight = 32;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(-1, 140);
@@ -182,38 +182,13 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             // 
-            // bbtnrechercher
-            // 
-            this.bbtnrechercher.ActiveBorderThickness = 1;
-            this.bbtnrechercher.ActiveCornerRadius = 20;
-            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bbtnrechercher.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
-            this.bbtnrechercher.ButtonText = "RECHERCHER";
-            this.bbtnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnrechercher.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnrechercher.IdleBorderThickness = 1;
-            this.bbtnrechercher.IdleCornerRadius = 20;
-            this.bbtnrechercher.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnrechercher.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.Location = new System.Drawing.Point(383, 431);
-            this.bbtnrechercher.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnrechercher.Name = "bbtnrechercher";
-            this.bbtnrechercher.Size = new System.Drawing.Size(178, 30);
-            this.bbtnrechercher.TabIndex = 27;
-            this.bbtnrechercher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // bbtnvider
             // 
             this.bbtnvider.ActiveBorderThickness = 1;
             this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bbtnvider.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
             this.bbtnvider.BackColor = System.Drawing.Color.Silver;
             this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
             this.bbtnvider.ButtonText = "VIDER";
@@ -232,11 +207,36 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.bbtnvider.TabIndex = 26;
             this.bbtnvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // bbtnrechercher
+            // 
+            this.bbtnrechercher.ActiveBorderThickness = 1;
+            this.bbtnrechercher.ActiveCornerRadius = 20;
+            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.White;
+            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
+            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
+            this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnrechercher.BackgroundImage")));
+            this.bbtnrechercher.ButtonText = "RECHERCHER";
+            this.bbtnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bbtnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtnrechercher.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bbtnrechercher.IdleBorderThickness = 1;
+            this.bbtnrechercher.IdleCornerRadius = 20;
+            this.bbtnrechercher.IdleFillColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.bbtnrechercher.IdleLineColor = System.Drawing.Color.Silver;
+            this.bbtnrechercher.Location = new System.Drawing.Point(378, 431);
+            this.bbtnrechercher.Margin = new System.Windows.Forms.Padding(5);
+            this.bbtnrechercher.Name = "bbtnrechercher";
+            this.bbtnrechercher.Size = new System.Drawing.Size(188, 30);
+            this.bbtnrechercher.TabIndex = 27;
+            this.bbtnrechercher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // uc_rechercher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BackColor = System.Drawing.Color.Silver;
             this.Controls.Add(this.bbtnrechercher);
             this.Controls.Add(this.bbtnvider);
             this.Controls.Add(this.grpbrecherche);
@@ -254,7 +254,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
         #endregion
 
         private System.Windows.Forms.Label lbltitre;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnrechercher;
         private Bunifu.Framework.UI.BunifuThinButton2 bbtnvider;
         private System.Windows.Forms.GroupBox grpbrecherche;
         private System.Windows.Forms.ComboBox cmbgroupe;
@@ -263,5 +262,6 @@ namespace GESTION_ABSENCE.uc_stagiaire
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private Bunifu.Framework.UI.BunifuThinButton2 bbtnrechercher;
     }
 }

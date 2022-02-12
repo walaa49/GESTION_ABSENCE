@@ -127,20 +127,20 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bbtnrechercher.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAALIAAAAeCAYAAACIVET9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABnSURBVHhe7dJBEQAgAAQh+6e6ZprDHR404Gy78DuRSRCZ
-        BJFJEJkEkUkQmQSRSRCZBJFJEJkEkUkQmQSRSRCZBJFJEJkEkUkQmQSRSRCZBJFJEJkEkUkQmQSRSRCZ
-        BJFJEJkEkQnYfcOouhKpXNZTAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="bbtnvider.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJQAAAAeCAYAAADKFzdqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABjSURBVHhe7dIxAQAwDASh+lf1zlITNzLggLftoCIUKaFI
         CUVKKFJCkRKKlFCkhCIlFCmhSAlFSihSQpESipRQpIQiJRQpoUgJRUooUkKREoqUUKSEIiUUKaFICUVK
         KFJCEdp9BP5P8ftXTfsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bbtnrechercher.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALwAAAAeCAYAAACWnXROAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABmSURBVHhe7dIxAQAwEAOh+lcVZ18hx4AD3raDCuFJEZ4U
+        4UkRnhThSRGeFOFJEZ4U4UkRnhThSRGeFOFJEZ4U4UkRnhThSRGeFOFJEZ4U4UkRnhThSRGeFOFJEZ4U
+        4UkRnhThCdl9vcqIIogS24YAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

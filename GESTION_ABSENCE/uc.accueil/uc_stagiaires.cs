@@ -19,9 +19,11 @@ namespace GESTION_ABSENCE.uc.accueil
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             frmGestionStagiaires fg = new frmGestionStagiaires();
             fg.Show();
+            frm_accueil fc = new frm_accueil();
+            fc.Hide();
         }
     }
 }

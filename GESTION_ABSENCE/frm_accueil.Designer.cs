@@ -38,18 +38,18 @@ namespace GESTION_ABSENCE
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.uc_stagiaires1 = new GESTION_ABSENCE.uc.accueil.uc_stagiaires();
             this.uc_saisie1 = new GESTION_ABSENCE.uc.accueil.uc_saisie();
             this.uc_ulisateur1 = new GESTION_ABSENCE.uc.accueil.uc_ulisateur();
             this.uc_consulter1 = new GESTION_ABSENCE.uc.accueil.uc_consulter();
-            this.uc_stagiaires1 = new GESTION_ABSENCE.uc.accueil.uc_stagiaires();
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -121,34 +121,6 @@ namespace GESTION_ABSENCE
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(944, 88);
             this.panel2.TabIndex = 1;
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.BlueViolet;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.BlueViolet;
-            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "GESTION STAGIAIRES";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition2.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.BlueViolet;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.BlueViolet;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(228, 7);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(117, 73);
-            this.bunifuThinButton24.TabIndex = 6;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click_1);
             // 
             // bunifuThinButton23
             // 
@@ -258,10 +230,10 @@ namespace GESTION_ABSENCE
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.uc_stagiaires1);
             this.panel3.Controls.Add(this.uc_saisie1);
             this.panel3.Controls.Add(this.uc_ulisateur1);
             this.panel3.Controls.Add(this.uc_consulter1);
-            this.panel3.Controls.Add(this.uc_stagiaires1);
             this.bunifuTransition2.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition1.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -269,6 +241,20 @@ namespace GESTION_ABSENCE
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(944, 362);
             this.panel3.TabIndex = 2;
+            // 
+            // uc_stagiaires1
+            // 
+            this.uc_stagiaires1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_stagiaires1.BackgroundImage")));
+            this.uc_stagiaires1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.uc_stagiaires1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.uc_stagiaires1, BunifuAnimatorNS.DecorationType.None);
+            this.uc_stagiaires1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uc_stagiaires1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uc_stagiaires1.Location = new System.Drawing.Point(0, 0);
+            this.uc_stagiaires1.Name = "uc_stagiaires1";
+            this.uc_stagiaires1.Size = new System.Drawing.Size(944, 362);
+            this.uc_stagiaires1.TabIndex = 4;
+            this.uc_stagiaires1.Visible = false;
             // 
             // uc_saisie1
             // 
@@ -313,21 +299,6 @@ namespace GESTION_ABSENCE
             this.uc_consulter1.TabIndex = 1;
             this.uc_consulter1.Visible = false;
             // 
-            // uc_stagiaires1
-            // 
-            this.uc_stagiaires1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("uc_stagiaires1.BackgroundImage")));
-            this.uc_stagiaires1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuTransition1.SetDecoration(this.uc_stagiaires1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.uc_stagiaires1, BunifuAnimatorNS.DecorationType.None);
-            this.uc_stagiaires1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uc_stagiaires1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uc_stagiaires1.Location = new System.Drawing.Point(0, 0);
-            this.uc_stagiaires1.Margin = new System.Windows.Forms.Padding(4);
-            this.uc_stagiaires1.Name = "uc_stagiaires1";
-            this.uc_stagiaires1.Size = new System.Drawing.Size(944, 362);
-            this.uc_stagiaires1.TabIndex = 0;
-            this.uc_stagiaires1.Visible = false;
-            // 
             // bunifuTransition2
             // 
             this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
@@ -354,6 +325,34 @@ namespace GESTION_ABSENCE
             // 
             this.bunifuElipse1.ElipseRadius = 30;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.BlueViolet;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.BlueViolet;
+            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "GESTION STAGIAIRES";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition2.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.BlueViolet;
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.BlueViolet;
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton24.Location = new System.Drawing.Point(228, 7);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(117, 73);
+            this.bunifuThinButton24.TabIndex = 6;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click_1);
             // 
             // frm_accueil
             // 
@@ -392,7 +391,6 @@ namespace GESTION_ABSENCE
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.Panel panel3;
@@ -400,5 +398,6 @@ namespace GESTION_ABSENCE
         private uc.accueil.uc_ulisateur uc_ulisateur1;
         private uc.accueil.uc_consulter uc_consulter1;
         private uc.accueil.uc_stagiaires uc_stagiaires1;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
     }
 }
