@@ -29,24 +29,24 @@ namespace GESTION_ABSENCE.uc_stagiaire
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_ajouter));
             this.label1 = new System.Windows.Forms.Label();
-            this.btxtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btxtnom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btxttelephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btxtprenom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtnom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txttelephone = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtprenom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cmbgroupe = new System.Windows.Forms.ComboBox();
             this.cmbannee = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bbtnvider = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bbtnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bbtnajouter = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnvider = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnajouter = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,85 +60,89 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.label1.TabIndex = 0;
             this.label1.Text = "AJOUTER UN STAGIAIRE";
             // 
-            // btxtcin
+            // txtcin
             // 
-            this.btxtcin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtcin.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxtcin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btxtcin.HintForeColor = System.Drawing.Color.Empty;
-            this.btxtcin.HintText = "";
-            this.btxtcin.isPassword = false;
-            this.btxtcin.LineFocusedColor = System.Drawing.Color.Blue;
-            this.btxtcin.LineIdleColor = System.Drawing.Color.ForestGreen;
-            this.btxtcin.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.btxtcin.LineThickness = 3;
-            this.btxtcin.Location = new System.Drawing.Point(16, 150);
-            this.btxtcin.Margin = new System.Windows.Forms.Padding(5);
-            this.btxtcin.Name = "btxtcin";
-            this.btxtcin.Size = new System.Drawing.Size(200, 39);
-            this.btxtcin.TabIndex = 7;
-            this.btxtcin.Text = "CIN";
-            this.btxtcin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtcin.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtcin.HintForeColor = System.Drawing.Color.Empty;
+            this.txtcin.HintText = "";
+            this.txtcin.isPassword = false;
+            this.txtcin.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtcin.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txtcin.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtcin.LineThickness = 3;
+            this.txtcin.Location = new System.Drawing.Point(16, 150);
+            this.txtcin.Margin = new System.Windows.Forms.Padding(5);
+            this.txtcin.Name = "txtcin";
+            this.txtcin.Size = new System.Drawing.Size(200, 39);
+            this.txtcin.TabIndex = 7;
+            this.txtcin.Text = "CIN";
+            this.txtcin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcin.Click += new System.EventHandler(this.btxtcin_Click);
             // 
-            // btxtnom
+            // txtnom
             // 
-            this.btxtnom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtnom.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxtnom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btxtnom.HintForeColor = System.Drawing.Color.Empty;
-            this.btxtnom.HintText = "";
-            this.btxtnom.isPassword = false;
-            this.btxtnom.LineFocusedColor = System.Drawing.Color.Blue;
-            this.btxtnom.LineIdleColor = System.Drawing.Color.ForestGreen;
-            this.btxtnom.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.btxtnom.LineThickness = 3;
-            this.btxtnom.Location = new System.Drawing.Point(16, 206);
-            this.btxtnom.Margin = new System.Windows.Forms.Padding(5);
-            this.btxtnom.Name = "btxtnom";
-            this.btxtnom.Size = new System.Drawing.Size(200, 29);
-            this.btxtnom.TabIndex = 8;
-            this.btxtnom.Text = "NOM";
-            this.btxtnom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnom.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtnom.HintForeColor = System.Drawing.Color.Empty;
+            this.txtnom.HintText = "";
+            this.txtnom.isPassword = false;
+            this.txtnom.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtnom.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txtnom.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtnom.LineThickness = 3;
+            this.txtnom.Location = new System.Drawing.Point(16, 206);
+            this.txtnom.Margin = new System.Windows.Forms.Padding(5);
+            this.txtnom.Name = "txtnom";
+            this.txtnom.Size = new System.Drawing.Size(200, 29);
+            this.txtnom.TabIndex = 8;
+            this.txtnom.Text = "NOM";
+            this.txtnom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnom.Click += new System.EventHandler(this.txtnom_Click);
             // 
-            // btxttelephone
+            // txttelephone
             // 
-            this.btxttelephone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxttelephone.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxttelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btxttelephone.HintForeColor = System.Drawing.Color.Empty;
-            this.btxttelephone.HintText = "";
-            this.btxttelephone.isPassword = false;
-            this.btxttelephone.LineFocusedColor = System.Drawing.Color.Blue;
-            this.btxttelephone.LineIdleColor = System.Drawing.Color.ForestGreen;
-            this.btxttelephone.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.btxttelephone.LineThickness = 3;
-            this.btxttelephone.Location = new System.Drawing.Point(16, 298);
-            this.btxttelephone.Margin = new System.Windows.Forms.Padding(5);
-            this.btxttelephone.Name = "btxttelephone";
-            this.btxttelephone.Size = new System.Drawing.Size(200, 29);
-            this.btxttelephone.TabIndex = 10;
-            this.btxttelephone.Text = "TELEPHONE";
-            this.btxttelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txttelephone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttelephone.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txttelephone.HintForeColor = System.Drawing.Color.Empty;
+            this.txttelephone.HintText = "";
+            this.txttelephone.isPassword = false;
+            this.txttelephone.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txttelephone.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txttelephone.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txttelephone.LineThickness = 3;
+            this.txttelephone.Location = new System.Drawing.Point(16, 298);
+            this.txttelephone.Margin = new System.Windows.Forms.Padding(5);
+            this.txttelephone.Name = "txttelephone";
+            this.txttelephone.Size = new System.Drawing.Size(200, 29);
+            this.txttelephone.TabIndex = 10;
+            this.txttelephone.Text = "TELEPHONE";
+            this.txttelephone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txttelephone.Click += new System.EventHandler(this.txttelephone_Click);
             // 
-            // btxtprenom
+            // txtprenom
             // 
-            this.btxtprenom.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtprenom.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxtprenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btxtprenom.HintForeColor = System.Drawing.Color.Empty;
-            this.btxtprenom.HintText = "";
-            this.btxtprenom.isPassword = false;
-            this.btxtprenom.LineFocusedColor = System.Drawing.Color.Blue;
-            this.btxtprenom.LineIdleColor = System.Drawing.Color.ForestGreen;
-            this.btxtprenom.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.btxtprenom.LineThickness = 3;
-            this.btxtprenom.Location = new System.Drawing.Point(16, 252);
-            this.btxtprenom.Margin = new System.Windows.Forms.Padding(5);
-            this.btxtprenom.Name = "btxtprenom";
-            this.btxtprenom.Size = new System.Drawing.Size(200, 29);
-            this.btxtprenom.TabIndex = 9;
-            this.btxtprenom.Text = "PRENOM";
-            this.btxtprenom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtprenom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtprenom.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtprenom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtprenom.HintForeColor = System.Drawing.Color.Empty;
+            this.txtprenom.HintText = "";
+            this.txtprenom.isPassword = false;
+            this.txtprenom.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtprenom.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txtprenom.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtprenom.LineThickness = 3;
+            this.txtprenom.Location = new System.Drawing.Point(16, 252);
+            this.txtprenom.Margin = new System.Windows.Forms.Padding(5);
+            this.txtprenom.Name = "txtprenom";
+            this.txtprenom.Size = new System.Drawing.Size(200, 29);
+            this.txtprenom.TabIndex = 9;
+            this.txtprenom.Text = "PRENOM";
+            this.txtprenom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtprenom.Click += new System.EventHandler(this.txtprenom_Click);
             // 
             // cmbgroupe
             // 
@@ -164,34 +168,34 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gunaDataGridView1.ColumnHeadersHeight = 32;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(288, 196);
@@ -244,96 +248,96 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             // 
-            // bbtnvider
+            // btnvider
             // 
-            this.bbtnvider.ActiveBorderThickness = 1;
-            this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnvider.BackColor = System.Drawing.Color.Silver;
-            this.bbtnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnvider.BackgroundImage")));
-            this.bbtnvider.ButtonText = "VIDER";
-            this.bbtnvider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnvider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnvider.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnvider.IdleBorderThickness = 1;
-            this.bbtnvider.IdleCornerRadius = 20;
-            this.bbtnvider.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnvider.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnvider.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnvider.Location = new System.Drawing.Point(776, 463);
-            this.bbtnvider.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnvider.Name = "bbtnvider";
-            this.bbtnvider.Size = new System.Drawing.Size(148, 38);
-            this.bbtnvider.TabIndex = 18;
-            this.bbtnvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnvider.ActiveBorderThickness = 1;
+            this.btnvider.ActiveCornerRadius = 20;
+            this.btnvider.ActiveFillColor = System.Drawing.Color.White;
+            this.btnvider.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnvider.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnvider.BackColor = System.Drawing.Color.Silver;
+            this.btnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvider.BackgroundImage")));
+            this.btnvider.ButtonText = "VIDER";
+            this.btnvider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvider.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnvider.IdleBorderThickness = 1;
+            this.btnvider.IdleCornerRadius = 20;
+            this.btnvider.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnvider.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnvider.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnvider.Location = new System.Drawing.Point(776, 463);
+            this.btnvider.Margin = new System.Windows.Forms.Padding(5);
+            this.btnvider.Name = "btnvider";
+            this.btnvider.Size = new System.Drawing.Size(148, 38);
+            this.btnvider.TabIndex = 18;
+            this.btnvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bbtnsupprimer
+            // btnsupprimer
             // 
-            this.bbtnsupprimer.ActiveBorderThickness = 1;
-            this.bbtnsupprimer.ActiveCornerRadius = 20;
-            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnsupprimer.BackgroundImage")));
-            this.bbtnsupprimer.ButtonText = "SUPPRIMER";
-            this.bbtnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnsupprimer.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnsupprimer.IdleBorderThickness = 1;
-            this.bbtnsupprimer.IdleCornerRadius = 20;
-            this.bbtnsupprimer.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnsupprimer.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.Location = new System.Drawing.Point(453, 465);
-            this.bbtnsupprimer.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnsupprimer.Name = "bbtnsupprimer";
-            this.bbtnsupprimer.Size = new System.Drawing.Size(148, 37);
-            this.bbtnsupprimer.TabIndex = 16;
-            this.bbtnsupprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsupprimer.ActiveBorderThickness = 1;
+            this.btnsupprimer.ActiveCornerRadius = 20;
+            this.btnsupprimer.ActiveFillColor = System.Drawing.Color.White;
+            this.btnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnsupprimer.BackColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsupprimer.BackgroundImage")));
+            this.btnsupprimer.ButtonText = "SUPPRIMER";
+            this.btnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsupprimer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnsupprimer.IdleBorderThickness = 1;
+            this.btnsupprimer.IdleCornerRadius = 20;
+            this.btnsupprimer.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnsupprimer.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.Location = new System.Drawing.Point(453, 465);
+            this.btnsupprimer.Margin = new System.Windows.Forms.Padding(5);
+            this.btnsupprimer.Name = "btnsupprimer";
+            this.btnsupprimer.Size = new System.Drawing.Size(148, 37);
+            this.btnsupprimer.TabIndex = 16;
+            this.btnsupprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bbtnajouter
+            // btnajouter
             // 
-            this.bbtnajouter.ActiveBorderThickness = 1;
-            this.bbtnajouter.ActiveCornerRadius = 20;
-            this.bbtnajouter.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnajouter.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnajouter.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnajouter.BackColor = System.Drawing.Color.Silver;
-            this.bbtnajouter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bbtnajouter.BackgroundImage")));
-            this.bbtnajouter.ButtonText = "AJOUTER";
-            this.bbtnajouter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnajouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnajouter.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnajouter.IdleBorderThickness = 1;
-            this.bbtnajouter.IdleCornerRadius = 20;
-            this.bbtnajouter.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnajouter.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnajouter.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnajouter.Location = new System.Drawing.Point(326, 464);
-            this.bbtnajouter.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnajouter.Name = "bbtnajouter";
-            this.bbtnajouter.Size = new System.Drawing.Size(127, 37);
-            this.bbtnajouter.TabIndex = 12;
-            this.bbtnajouter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnajouter.ActiveBorderThickness = 1;
+            this.btnajouter.ActiveCornerRadius = 20;
+            this.btnajouter.ActiveFillColor = System.Drawing.Color.White;
+            this.btnajouter.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnajouter.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnajouter.BackColor = System.Drawing.Color.Silver;
+            this.btnajouter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnajouter.BackgroundImage")));
+            this.btnajouter.ButtonText = "AJOUTER";
+            this.btnajouter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnajouter.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnajouter.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnajouter.IdleBorderThickness = 1;
+            this.btnajouter.IdleCornerRadius = 20;
+            this.btnajouter.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnajouter.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnajouter.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnajouter.Location = new System.Drawing.Point(326, 464);
+            this.btnajouter.Margin = new System.Windows.Forms.Padding(5);
+            this.btnajouter.Name = "btnajouter";
+            this.btnajouter.Size = new System.Drawing.Size(127, 37);
+            this.btnajouter.TabIndex = 12;
+            this.btnajouter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uc_ajouter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.bbtnvider);
-            this.Controls.Add(this.bbtnsupprimer);
+            this.Controls.Add(this.btnvider);
+            this.Controls.Add(this.btnsupprimer);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.cmbannee);
-            this.Controls.Add(this.bbtnajouter);
+            this.Controls.Add(this.btnajouter);
             this.Controls.Add(this.cmbgroupe);
-            this.Controls.Add(this.btxttelephone);
-            this.Controls.Add(this.btxtprenom);
-            this.Controls.Add(this.btxtnom);
-            this.Controls.Add(this.btxtcin);
+            this.Controls.Add(this.txttelephone);
+            this.Controls.Add(this.txtprenom);
+            this.Controls.Add(this.txtnom);
+            this.Controls.Add(this.txtcin);
             this.Controls.Add(this.label1);
             this.Name = "uc_ajouter";
             this.Size = new System.Drawing.Size(927, 623);
@@ -346,18 +350,18 @@ namespace GESTION_ABSENCE.uc_stagiaire
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btxtcin;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btxtnom;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btxttelephone;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btxtprenom;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtcin;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtnom;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txttelephone;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtprenom;
         private System.Windows.Forms.ComboBox cmbgroupe;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnajouter;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnajouter;
         private System.Windows.Forms.ComboBox cmbannee;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnsupprimer;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnvider;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnsupprimer;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnvider;
     }
 }

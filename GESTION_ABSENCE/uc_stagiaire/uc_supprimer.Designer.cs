@@ -29,9 +29,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_supprimer));
             this.lbltitre = new System.Windows.Forms.Label();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,10 +40,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpbrecherche = new System.Windows.Forms.GroupBox();
             this.cmbgroupe = new System.Windows.Forms.ComboBox();
-            this.btxtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bbtnvider = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bbtnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bbtnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtcin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnvider = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnsupprimer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnrechercher = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             this.grpbrecherche.SuspendLayout();
             this.SuspendLayout();
@@ -59,34 +60,34 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // 
             // gunaDataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gunaDataGridView1.ColumnHeadersHeight = 32;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(0, 141);
@@ -141,7 +142,7 @@ namespace GESTION_ABSENCE.uc_stagiaire
             // grpbrecherche
             // 
             this.grpbrecherche.Controls.Add(this.cmbgroupe);
-            this.grpbrecherche.Controls.Add(this.btxtcin);
+            this.grpbrecherche.Controls.Add(this.txtcin);
             this.grpbrecherche.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbrecherche.ForeColor = System.Drawing.Color.DimGray;
             this.grpbrecherche.Location = new System.Drawing.Point(1, 55);
@@ -162,106 +163,111 @@ namespace GESTION_ABSENCE.uc_stagiaire
             this.cmbgroupe.TabIndex = 12;
             this.cmbgroupe.Text = "     --GROUPE--";
             // 
-            // btxtcin
+            // txtcin
             // 
-            this.btxtcin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btxtcin.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxtcin.ForeColor = System.Drawing.Color.DimGray;
-            this.btxtcin.HintForeColor = System.Drawing.Color.Empty;
-            this.btxtcin.HintText = "";
-            this.btxtcin.isPassword = false;
-            this.btxtcin.LineFocusedColor = System.Drawing.Color.Blue;
-            this.btxtcin.LineIdleColor = System.Drawing.Color.Gray;
-            this.btxtcin.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.btxtcin.LineThickness = 3;
-            this.btxtcin.Location = new System.Drawing.Point(205, 28);
-            this.btxtcin.Margin = new System.Windows.Forms.Padding(5);
-            this.btxtcin.Name = "btxtcin";
-            this.btxtcin.Size = new System.Drawing.Size(200, 39);
-            this.btxtcin.TabIndex = 8;
-            this.btxtcin.Text = "CIN";
-            this.btxtcin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtcin.Font = new System.Drawing.Font("Lucida Bright", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcin.ForeColor = System.Drawing.Color.DimGray;
+            this.txtcin.HintForeColor = System.Drawing.Color.Empty;
+            this.txtcin.HintText = "";
+            this.txtcin.isPassword = false;
+            this.txtcin.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtcin.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtcin.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtcin.LineThickness = 3;
+            this.txtcin.Location = new System.Drawing.Point(205, 28);
+            this.txtcin.Margin = new System.Windows.Forms.Padding(5);
+            this.txtcin.Name = "txtcin";
+            this.txtcin.Size = new System.Drawing.Size(200, 39);
+            this.txtcin.TabIndex = 8;
+            this.txtcin.Text = "CIN";
+            this.txtcin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcin.OnValueChanged += new System.EventHandler(this.txtcin_OnValueChanged);
+            this.txtcin.Click += new System.EventHandler(this.txtcin_Click);
             // 
-            // bbtnvider
+            // btnvider
             // 
-            this.bbtnvider.ActiveBorderThickness = 1;
-            this.bbtnvider.ActiveCornerRadius = 20;
-            this.bbtnvider.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnvider.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnvider.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnvider.BackColor = System.Drawing.Color.Silver;
-            this.bbtnvider.ButtonText = "VIDER";
-            this.bbtnvider.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnvider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnvider.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnvider.IdleBorderThickness = 1;
-            this.bbtnvider.IdleCornerRadius = 20;
-            this.bbtnvider.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnvider.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnvider.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnvider.Location = new System.Drawing.Point(791, 432);
-            this.bbtnvider.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnvider.Name = "bbtnvider";
-            this.bbtnvider.Size = new System.Drawing.Size(148, 30);
-            this.bbtnvider.TabIndex = 20;
-            this.bbtnvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnvider.ActiveBorderThickness = 1;
+            this.btnvider.ActiveCornerRadius = 20;
+            this.btnvider.ActiveFillColor = System.Drawing.Color.White;
+            this.btnvider.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnvider.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnvider.BackColor = System.Drawing.Color.Silver;
+            this.btnvider.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvider.BackgroundImage")));
+            this.btnvider.ButtonText = "VIDER";
+            this.btnvider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvider.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvider.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnvider.IdleBorderThickness = 1;
+            this.btnvider.IdleCornerRadius = 20;
+            this.btnvider.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnvider.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnvider.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnvider.Location = new System.Drawing.Point(791, 432);
+            this.btnvider.Margin = new System.Windows.Forms.Padding(5);
+            this.btnvider.Name = "btnvider";
+            this.btnvider.Size = new System.Drawing.Size(148, 30);
+            this.btnvider.TabIndex = 20;
+            this.btnvider.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bbtnsupprimer
+            // btnsupprimer
             // 
-            this.bbtnsupprimer.ActiveBorderThickness = 1;
-            this.bbtnsupprimer.ActiveCornerRadius = 20;
-            this.bbtnsupprimer.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnsupprimer.BackColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.ButtonText = "SUPPRIMER";
-            this.bbtnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnsupprimer.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnsupprimer.IdleBorderThickness = 1;
-            this.bbtnsupprimer.IdleCornerRadius = 20;
-            this.bbtnsupprimer.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnsupprimer.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnsupprimer.Location = new System.Drawing.Point(398, 432);
-            this.bbtnsupprimer.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnsupprimer.Name = "bbtnsupprimer";
-            this.bbtnsupprimer.Size = new System.Drawing.Size(148, 31);
-            this.bbtnsupprimer.TabIndex = 19;
-            this.bbtnsupprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsupprimer.ActiveBorderThickness = 1;
+            this.btnsupprimer.ActiveCornerRadius = 20;
+            this.btnsupprimer.ActiveFillColor = System.Drawing.Color.White;
+            this.btnsupprimer.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnsupprimer.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnsupprimer.BackColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsupprimer.BackgroundImage")));
+            this.btnsupprimer.ButtonText = "SUPPRIMER";
+            this.btnsupprimer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsupprimer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsupprimer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnsupprimer.IdleBorderThickness = 1;
+            this.btnsupprimer.IdleCornerRadius = 20;
+            this.btnsupprimer.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnsupprimer.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnsupprimer.Location = new System.Drawing.Point(398, 432);
+            this.btnsupprimer.Margin = new System.Windows.Forms.Padding(5);
+            this.btnsupprimer.Name = "btnsupprimer";
+            this.btnsupprimer.Size = new System.Drawing.Size(148, 31);
+            this.btnsupprimer.TabIndex = 19;
+            this.btnsupprimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bbtnrechercher
+            // btnrechercher
             // 
-            this.bbtnrechercher.ActiveBorderThickness = 1;
-            this.bbtnrechercher.ActiveCornerRadius = 20;
-            this.bbtnrechercher.ActiveFillColor = System.Drawing.Color.White;
-            this.bbtnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
-            this.bbtnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
-            this.bbtnrechercher.BackColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.ButtonText = "RECHERCHER";
-            this.bbtnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bbtnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnrechercher.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bbtnrechercher.IdleBorderThickness = 1;
-            this.bbtnrechercher.IdleCornerRadius = 20;
-            this.bbtnrechercher.IdleFillColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.IdleForecolor = System.Drawing.Color.Honeydew;
-            this.bbtnrechercher.IdleLineColor = System.Drawing.Color.Silver;
-            this.bbtnrechercher.Location = new System.Drawing.Point(1, 432);
-            this.bbtnrechercher.Margin = new System.Windows.Forms.Padding(5);
-            this.bbtnrechercher.Name = "bbtnrechercher";
-            this.bbtnrechercher.Size = new System.Drawing.Size(178, 30);
-            this.bbtnrechercher.TabIndex = 22;
-            this.bbtnrechercher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnrechercher.ActiveBorderThickness = 1;
+            this.btnrechercher.ActiveCornerRadius = 20;
+            this.btnrechercher.ActiveFillColor = System.Drawing.Color.White;
+            this.btnrechercher.ActiveForecolor = System.Drawing.Color.Gray;
+            this.btnrechercher.ActiveLineColor = System.Drawing.Color.Gray;
+            this.btnrechercher.BackColor = System.Drawing.Color.Silver;
+            this.btnrechercher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnrechercher.BackgroundImage")));
+            this.btnrechercher.ButtonText = "RECHERCHER";
+            this.btnrechercher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrechercher.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrechercher.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnrechercher.IdleBorderThickness = 1;
+            this.btnrechercher.IdleCornerRadius = 20;
+            this.btnrechercher.IdleFillColor = System.Drawing.Color.Silver;
+            this.btnrechercher.IdleForecolor = System.Drawing.Color.Honeydew;
+            this.btnrechercher.IdleLineColor = System.Drawing.Color.Silver;
+            this.btnrechercher.Location = new System.Drawing.Point(1, 432);
+            this.btnrechercher.Margin = new System.Windows.Forms.Padding(5);
+            this.btnrechercher.Name = "btnrechercher";
+            this.btnrechercher.Size = new System.Drawing.Size(178, 30);
+            this.btnrechercher.TabIndex = 22;
+            this.btnrechercher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uc_supprimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.bbtnrechercher);
-            this.Controls.Add(this.bbtnvider);
-            this.Controls.Add(this.bbtnsupprimer);
+            this.Controls.Add(this.btnrechercher);
+            this.Controls.Add(this.btnvider);
+            this.Controls.Add(this.btnsupprimer);
             this.Controls.Add(this.grpbrecherche);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.lbltitre);
@@ -282,10 +288,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.GroupBox grpbrecherche;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox btxtcin;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtcin;
         private System.Windows.Forms.ComboBox cmbgroupe;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnvider;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnsupprimer;
-        private Bunifu.Framework.UI.BunifuThinButton2 bbtnrechercher;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnvider;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnsupprimer;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnrechercher;
     }
 }

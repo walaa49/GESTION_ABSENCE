@@ -16,5 +16,10 @@ namespace GESTION_ABSENCE.uc_stagiaire
         {
             InitializeComponent();
         }
+
+        private void txtcin_Click(object sender, EventArgs e)
+        {
+            txtcin.Text = null;
+        }
     }
 }
